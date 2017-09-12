@@ -1,0 +1,109 @@
+* {
+     box-sizing: border-box;
+}
+nav{
+    overflow: hidden;
+
+}
+header {
+    position: fixed;
+    top:0;
+    width: 960px;
+    z-index: 1000; /*Exagerado..no? */
+}
+main{
+    margin-top: 100px;
+}
+.logo{
+    z-index: 999;
+    position: relative;
+}
+.logo,
+.menu ul li{
+    float:left;
+
+}
+.menu{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: -10px;
+}
+.menu ul{
+    list-style: none;
+    background-color: #EF4C27;
+    overflow: hidden;
+    margin: 30px 0 0 0;
+    padding: 14px;
+}
+.menu ul li {
+    margin-right: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+body{
+    width: 960px;
+    margin: 0 auto;
+
+}
+.products-container{
+    width: 100%;
+    overflow: hidden;
+}
+.product-box{
+    border: 1px solid #CCC;
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+    float: left;
+    position: relative;
+
+}
+.product-detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 170px;
+}
+.product-name{
+    color: red;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    font-size: 18px;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    text-align: center;
+}
+.tag{
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.btn{
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 101px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #EF4C27;
+    padding: 8px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.do-meow-on-hover:hover{
+    color: transparent;
+    background-image: url(../imagenes/cutehamster.gif);
+    background-position: 0 center;
+    display: inline-block;
+    width: 20px;
+}
+footer{
+    text-align: center;
+    color: #666;
+}
